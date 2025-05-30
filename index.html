@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio Sacre Mavuidi</title>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="beta.css">
+ 
+
+</head>
+<body>
+
+    <!-- Bouton menu burger -->
+        <div class="menu-burger" id="menuBurger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+
+        <!-- Menu déroulant -->
+        <div class="menu" id="menu">
+            <a href="apropos.html">À propos</a>
+            <a href="#contact">Me contacter</a>
+            <a href="#telecharger">Télécharger</a>
+        </div>
+  <!--en tête de la page-->
+    <header>
+    <h1>Sacre</h1>
+    <nav>
+      <a href="#accueil">Accueil</a>
+      <a href="apropos.html">À propos</a>
+      <a href="#">Projets</a>
+      <a href="#">Contact</a>
+    </nav>
+  </header>
+
+  <section class="hero">
+    <img src="img/1659120377073.jpg" alt="Sacre Mavuidi">
+    <h2>Sacre Mavuidi</h2>
+    <h4>Étudiant, Otaku & Développeur</h4>
+    <p>Bienvenue sur mon portfolio personnel. Je suis étudiant en L1 à la FASI et passionné par le développement web. J’ai appris à coder grâce aux tutoriels en ligne comme ceux du site ETCstore.</p>
+    <div class="button-group">
+      <a href="tel:+243976443487"><button>Me Contacter</button></a>
+      <a href="COURS%20DE%20FRANCAIS%20L1%20FASI%20UPC.docx" download><button>Télécharger</button></a>
+    </div>
+  </section>
+
+  
+
+    <div class="skills">
+      <div class="skill">
+        <h4>HTML & CSS</h4>
+        <div class="skill-bar">
+          <div class="bar-fill" style="width: 80%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>JavaScript</h4>
+        <div class="skill-bar">
+          <div class="bar-fill" style="width: 60%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>Design</h4>
+        <div class="skill-bar">
+          <div class="bar-fill" style="width: 50%"></div>
+        </div>
+      </div>
+      <div class="skill">
+        <h4>WordPress</h4>
+        <div class="skill-bar">
+          <div class="bar-fill" style="width: 40%"></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <script>
+            // Sélection des éléments
+            const menuBurger = document.getElementById('menuBurger');
+            const menu = document.getElementById('menu');
+
+            // Affichage ou masquage du menu au clic
+            menuBurger.addEventListener('click', () => {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            // Cacher le menu si on clique en dehors
+            document.addEventListener('click', (event) => {
+                if (!menu.contains(event.target) && !menuBurger.contains(event.target)) {
+                    menu.style.display = 'none';
+                }
+            });
+        </script>
+</body>
+</html>
