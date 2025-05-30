@@ -17,6 +17,7 @@
     </div>
     
     <div class="menu" id="menu">
+        <a href="index.html">Accueil</a>
         <a href="apropos.html">À propos</a>
         <a href="#contact">Me contacter</a>
         <a href="#telecharger">Télécharger</a>
@@ -53,6 +54,24 @@
         <strong>Email:</strong> <a href="mailto:@sacremavuidi9.com">sacremavudi9@gmail.com</a>
       </div>
     </div>
+
+    <script>
+            // Sélection des éléments
+            const menuBurger = document.getElementById('menuBurger');
+            const menu = document.getElementById('menu');
+
+            // Affichage ou masquage du menu au clic
+            menuBurger.addEventListener('click', () => {
+                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
+            });
+
+            // Cacher le menu si on clique en dehors
+            document.addEventListener('click', (event) => {
+                if (!menu.contains(event.target) && !menuBurger.contains(event.target)) {
+                    menu.style.display = 'none';
+                }
+            });
+        </script>
 </body>
 </html>
         
