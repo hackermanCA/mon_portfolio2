@@ -26,10 +26,6 @@
   <!--en tête de la page-->
     <header>
     <h1>Sacre</h1>
-    <nav>
-      <a href="index.html">Accueil</a>
-      <a href="apropos.html">À propos</a>
-    </nav>
   </header>
 
   <section class="hero">
@@ -74,22 +70,6 @@
     </div>
   </section>
 
-  <script>
-            // Sélection des éléments
-            const menuBurger = document.getElementById('menuBurger');
-            const menu = document.getElementById('menu');
-
-            // Affichage ou masquage du menu au clic
-            menuBurger.addEventListener('click', () => {
-                menu.style.display = menu.style.display === 'block' ? 'none' : 'block';
-            });
-
-            // Cacher le menu si on clique en dehors
-            document.addEventListener('click', (event) => {
-                if (!menu.contains(event.target) && !menuBurger.contains(event.target)) {
-                    menu.style.display = 'none';
-                }
-            });
-        </script>
+  <script src="script.js"></script>
 </body>
 </html>
